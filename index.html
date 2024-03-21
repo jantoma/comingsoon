@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+  <link rel="stylesheet" href="css/style.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+    rel="stylesheet" />
+
+  <title>Frontend Mentor | Base Apparel coming soon page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <div class="container">
+      <a href=""><img src="images/logo.svg" alt="logo"></a>
+    </div>
+  </nav>
+  <main>
+    <article class="container">
+      <section class="image-sec">
+        <div class="hero-img">
+          <picture>
+            <source media="(min-width: 1024px) and (orientation: landscape)" srcset="images/hero-desktop.jpg" />
+            <source media="(max-width: 991px)" srcset="images/hero-mobile.jpg" />
+            <img src="images/hero-desktop.jpg" alt="hero" />
+          </picture>
+        </div>
+      </section>
+      <section class="content-sec">
+        <div class="content">
+          <h1><span>We're</span> coming soon</h1>
+          <p>
+            Hello fellow shoppers! We're currently building our new fashion
+            store. Add your email below to stay up-to-date with announcements
+            and our launch deals.
+          </p>
+          <form action="#" method="post">
+            <input type="email" id="input-email" name="email" placeholder="Email Address">
+            <button type="submit">
+              <img src="images/icon-arrow.svg" alt="icon arrow" />
+            </button>
+            <p id="error" style="padding: 5px 10px; color: red;text-align: left;"></p>
+          </form>
+        </div>
+      </section>
+    </article>
+
+  </main>
+  <footer>
+    <p class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a
+        href="#">Jan
+        Toma</a>.
+    </p>
+  </footer>
+
+  <script src="js/index.js"></script>
+</body>
+
+</html>
